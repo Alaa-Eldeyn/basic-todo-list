@@ -9,6 +9,25 @@ body{
         background: url(bg-mobile.png) center/cover;
     }
 }
+h1{
+    font-family: cairo,Tahoma,Arial;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+h1 span{
+    color: #00887a;
+}
+h1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    height: 1px;
+    background-color: white;
+}
 .container{
     width: 90%;
     margin: 1rem auto;
