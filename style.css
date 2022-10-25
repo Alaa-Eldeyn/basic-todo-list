@@ -1,21 +1,11 @@
 *{
     box-sizing: border-box;
 }
-body{
-    background: url(bg-desktop.jpg) center/cover;
-}
-@media(max-width: 500px){
-    body{
-        background: url(bg-mobile.jpg) center/cover;
-    }
-}
 h1{
     font-family: cairo,Tahoma,Arial;
     color: white;
     text-align: center;
     position: relative;
-    margin-top: 1rem;
-
 }
 h1 span{
     color: #00887a;
@@ -23,12 +13,20 @@ h1 span{
 h1::after{
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
     width: 75%;
     height: 1px;
     background-color: white;
+}
+body{
+    background: url(bg-desktop.jpg) center/cover;
+}
+@media(max-width: 500px){
+    body{
+        background: url(bg-mobile.jpg) center/cover;
+    }
 }
 .container{
     width: 90%;
@@ -62,9 +60,8 @@ h1::after{
 .form .add{
     background-color: #00887a;
     color: white;
-    padding: 5px 15px;
+    padding: 10px 15px;
     cursor: pointer;
-    font-size: 2rem;
 }
 @media(max-width: 400px){
     .form{
@@ -89,6 +86,8 @@ h1::after{
     border-radius: 10px;
     background-color: #eee;
     cursor: pointer;
+    max-height: 490px;
+    overflow: scroll;
 }
 .tasks div{
     display: flex;
