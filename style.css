@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 body{
-    background: url(bg-desktop.png) center/cover;
+    background: url(bg-desktop.jpg) center/cover;
 }
 @media(max-width: 500px){
     body{
-        background: url(bg-mobile.png) center/cover;
+        background: url(bg-mobile.jpg) center/cover;
     }
 }
 h1{
