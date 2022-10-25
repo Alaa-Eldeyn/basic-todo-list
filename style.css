@@ -19,6 +19,11 @@
     margin-bottom: 1rem;
     border-radius: .5rem;
 }
+@media(max-width: 400px){
+    .form{
+        flex-direction: column;
+    }
+}
 .form input{
     padding: 10px;
     border-radius: .25rem;
