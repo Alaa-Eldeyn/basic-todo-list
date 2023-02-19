@@ -87,7 +87,7 @@ body{
     background-color: #eee;
     cursor: pointer;
     max-height: 490px;
-    overflow: scroll;
+    overflow: autp;
 }
 .tasks div{
     display: flex;
